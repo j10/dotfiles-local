@@ -1,0 +1,5 @@
+" Solarized settings
+colorscheme solarized
+set background=dark
+set guifont=Monaco:h14
+set cmdheight=2

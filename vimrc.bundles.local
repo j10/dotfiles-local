@@ -1,0 +1,33 @@
+" Look & Feel
+Plug 'altercation/vim-colors-solarized'
+Plug 'Lokaltog/vim-powerline'
+
+" Utilities
+Plug 'mileszs/ack.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'godlygeek/tabular'
+Plug 'airblade/vim-gitgutter'
+Plug 'Townk/vim-autoclose'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/taglist.vim'
+Plug 'vim-scripts/screen.vim'
+
+" Autocompletion
+Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/neocomplcache.vim'
+
+" Assorted Languages
+" Plug 'jcf/vim-latex'
+" Plug 'ingydotnet/yaml-vim'
+" Plug 'vim-scripts/Vim-R-plugin'
+" Plug 'plasticboy/vim-markdown'
+" Plug 'mkitt/markdown-preview.vim'
+" Plug 'vim-scripts/Pydiction'
+
+" Haskell
+" Plug 'lukerandall/haskellmode-vim'
+" Plug 'eagletmt/ghcmod-vim'
+" Plug 'ujihisa/neco-ghc'
+" Plug 'Twinside/vim-haskellConceal'
+" Plug 'Twinside/vim-haskellFold'

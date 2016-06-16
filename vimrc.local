@@ -1,0 +1,114 @@
+" Justin's .vimrc
+"""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SETUP BASIC SETTINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hidden          " hide buffers
+set tabstop=4       " 4 spaces to represent a tab
+set backspace=indent,eol,start
+                    " allow backspacing over everything in insert mode
+set autoindent      " Copy indent from current line when starting a new line.
+set copyindent      " copy previous indentation on autoindenting
+set number          " show line numbers
+set ruler           " show the cursor position all the time
+set expandtab       " enter spaces when tab is pressed
+set softtabstop=4   " number of space to use for auto indent
+set shiftwidth=4    " use >> or << keys to indent current line or selection
+set smarttab        " insert tabs on the start of a line according to shiftwidth
+set wildmenu        " show some autocomplete options in status bar
+set textwidth=0     " do not break lines when line length increases
+set nocompatible    " use vim defaults
+set laststatus=2    " always show the statusline
+set scrolloff=3     " keep 3 lines when scrolling
+set showcmd         " display incomplete commands
+set history=1000    " # of lines of command line history
+set undolevels=1000 " # of levels of undo
+set hlsearch        " highlight searches
+set incsearch       " do incremental searching
+set showmatch       " jump to matches when entering regexp
+set ignorecase      " case insensitive search
+set smartcase       " no ignorecase if Uppercase present
+set nobackup        " keep a backup file?
+set title           " set the terminal title
+set visualbell      " make visual bell
+set pastetoggle=<F2> " Press F2 to prevent indentation on pasted text from getting F-ed
+set notitle         " Turn off message Thanks for flying vim
+
+syntax on           " turn syntax highlighting on
+filetype on
+filetype plugin on  " Enable file type detection
+filetype plugin indent on
+
+" color column at 80 and solid color after
+let &colorcolumn="80,".join(range(120,999),",")
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MOVEMENT
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Turn off <C-j> binding from imaps.vim (Latex)
+nnoremap <SID>I_won’t_ever_type_this <Plug>IMAP_JumpForward
+
+" Smart way to move btw. windows
+nn <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" When pressing <leader>cd switch to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Filetype
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufRead,BufNewFile  *.txt,*.TXT set filetype=markdown
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGIN SETTINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Solarized settings
+colorscheme solarized
+set background=dark
+
+" Tabularize settings
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>a" :Tabularize /"<CR>
+vmap <Leader>a" :Tabularize /"<CR>
+
+" Vim-latex settings
+let g:tex_flavor='latex'
+imap <C-space> <Plug>IMAP_JumpForward
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" " search in a singe file. This will confuse latex-suite. Set your grep
+" " program to alway generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" Pydiction settings
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+let g:pydiction_menu_height = 20
+
+" Haskell settings
+" use ghc functionality for haskell files
+au Bufenter *.hs compiler ghc
+
+" ghcmod-vim settings (and syntastic)
+let g:ghcmod_ghc_options = ['-fno-warn-missing-signatures']
+let g:ghcmod_hlint_options = ['-fno-warn-missing-signatures']
+let g:syntastic_haskell_ghc_mod_args = ['-fno-warn-missing-signatures']
+
+" Configure browser for haskell_doc.vim
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
+let g:ghc = "/usr/bin/ghc"
+
+" NeoComplCache
+let g:neocomplcache_enable_at_startup = 1
