@@ -14,16 +14,8 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/screen.vim'
 
 " Autocompletion
-Plug 'Shougo/vimproc.vim'
-Plug 'Shougo/neocomplcache.vim'
-
-" Assorted Languages
-" Plug 'jcf/vim-latex'
-" Plug 'ingydotnet/yaml-vim'
-" Plug 'vim-scripts/Vim-R-plugin'
-" Plug 'plasticboy/vim-markdown'
-" Plug 'mkitt/markdown-preview.vim'
-" Plug 'vim-scripts/Pydiction'
+" Plug 'Shougo/vimproc.vim'
+" Plug 'Shougo/neocomplcache.vim'
 
 " Haskell
 " Plug 'lukerandall/haskellmode-vim'

@@ -44,6 +44,13 @@ filetype plugin indent on
 " color column at 80 and solid color after
 let &colorcolumn="80,".join(range(120,999),",")
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI SETTINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme solarized
+set background=dark
+set guifont=Monaco:h18
+set cmdheight=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " MOVEMENT
@@ -71,9 +78,6 @@ autocmd BufRead,BufNewFile  *.txt,*.TXT set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-" Solarized settings
-colorscheme solarized
-set background=dark
 
 " Tabularize settings
 nmap <Leader>a= :Tabularize /=<CR>
