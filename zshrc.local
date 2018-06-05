@@ -1,5 +1,9 @@
 # Path to oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/tools/bin64:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools:$HOME/.cargo/bin:$PATH
+export TESTAI_LOGLEVEL=INFO
+export PATH=$HOME/google-cloud-sdk/bin:$PATH
 
 # Just update oh-my-zsh
 DISABLE_UPDATE_PROMPT=true
@@ -17,6 +21,7 @@ plugins=(
   rbenv
   ruby
   cabal
+  vi-mode
 )
 
 # Load everything

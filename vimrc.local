@@ -49,7 +49,7 @@ let &colorcolumn="80,".join(range(120,999),",")
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme solarized
 set background=dark
-set guifont=Monaco:h16
+set guifont=Inconsolata:h18
 set cmdheight=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
