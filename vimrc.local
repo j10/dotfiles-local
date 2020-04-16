@@ -47,7 +47,7 @@ let &colorcolumn="80,".join(range(120,999),",")
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme solarized
+" colorscheme solarized
 set background=dark
 set guifont=Inconsolata:h18
 set cmdheight=2

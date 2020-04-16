@@ -1,17 +1,17 @@
 " Look & Feel
-Plug 'altercation/vim-colors-solarized'
-Plug 'Lokaltog/vim-powerline'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'Lokaltog/vim-powerline'
 
 " Utilities
-Plug 'mileszs/ack.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'godlygeek/tabular'
-Plug 'airblade/vim-gitgutter'
-Plug 'Townk/vim-autoclose'
-Plug 'tpope/vim-repeat'
-Plug 'vim-scripts/taglist.vim'
-Plug 'vim-scripts/screen.vim'
+" Plug 'mileszs/ack.vim'
+" Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdcommenter'
+" Plug 'godlygeek/tabular'
+" Plug 'airblade/vim-gitgutter'
+" Plug 'Townk/vim-autoclose'
+" Plug 'tpope/vim-repeat'
+" Plug 'vim-scripts/taglist.vim'
+" Plug 'vim-scripts/screen.vim'
 
 " Autocompletion
 " Plug 'Shougo/vimproc.vim'
