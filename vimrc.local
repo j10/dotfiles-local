@@ -68,6 +68,8 @@ map <C-l> <C-W>l
 " When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>
 
+" Map jj as Escape in insert mode
+imap jj <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetype
